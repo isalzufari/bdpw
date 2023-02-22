@@ -155,8 +155,17 @@ main aside .social-media li a {
   transition: all .1s ease-in-out;
 }
 
-main aside .social-media li a:hover {
-  color: grey;
+main aside .social-media li a:hover .fa-youtube {
+  color: red;
+}
+main aside .social-media li a:hover .fa-linkedin-in {
+  color: blue;
+}
+main aside .social-media li a:hover .fa-twitter {
+  color: lightblue;
+}
+main aside .social-media li a:hover .fa-facebook {
+  color: deepskyblue;
 }
 
 @media screen and (max-width: 768px) {
@@ -174,6 +183,20 @@ main aside .social-media li a:hover {
     gap: 2rem;
   }
 
+  main .contact {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .blog {
+    flex-direction: column-reverse !important;
+    gap: 2rem;
+  }
+
+  .card-row {
+    flex-direction: column;
+  }
+
   main .content .content-description .title {
     font-size: 3rem;
   }
@@ -185,4 +208,33 @@ main aside .social-media li a:hover {
   main .content .content-image {
     order: -1;
   }
+}
+
+/* Card */
+.card {
+  border-radius: 10px;
+  background:#e0e0e0;
+  box-shadow: -5px -5px 10px #bebebe,
+             5px 5px 10px #ffffff;
+  transition: 0.3s;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+  padding: 2px 16px;
+  margin: 20px 10px;
+}
+
+.card-blog {
+  max-width: 200px;
+}
+
+/* Blog */
+.blog {
+  flex-direction: column;
+  margin: 0.5rem;
 }
