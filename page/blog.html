@@ -31,31 +31,42 @@
           BLOG
         </div>
       </div>
-
-      <div class="content-image card-row">
-        <div class="card blog card-blog">
-          <div class="card-container">
-            <h4>CSS</h4>
-            <p>Styling dengan CSS</p>
-          </div>
-        </div>
-
-        <div class="card blog card-blog">
-          <div class="card-container">
-            <h4>JSS</h4>
-            <P>Coding dengan JS</P>
-          </div>
-        </div>
-
-        <div class="card blog card-blog">
-          <div class="card-container">
-            <h4>PHP</h4>
-            <P>Kita Belajar Bahasa Pemrograman Server Side</P>
-          </div>
-        </div>
-      </div>
+      <div class="content-image card-row" id="content-blog"></div>
     </div>
   </main>
+  <script>
+    const posts = [
+      {
+        title: "CSS",
+        content: "Styling dengan CSS",
+      },
+      {
+        title: "Node JS",
+        content: "Membuat REST API dengan Node.JS"
+      },
+      {
+        title: "Laravel",
+        content: "Membuat REST API dengan Laravel"
+      },
+      {
+        title: "React JS",
+        content: "Consume API dengan React JS"
+      }
+    ]
+
+    let blogHTML = '';
+    posts.forEach(e => {
+      blogHTML += `
+        <div class="card blog card-blog">
+          <div class="card-container">
+            <h4>${e.title}</h4>
+            <p>${e.content}</p>
+          </div>
+        </div>
+      `;
+    });
+    document.getElementById("content-blog").innerHTML = blogHTML;
+  </script>
 </body>
 
 </html>
