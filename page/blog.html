@@ -34,6 +34,11 @@
       <div class="content-image card-row" id="content-blog"></div>
     </div>
   </main>
+
+  <footer>
+    Copyright @isalzufari
+  </footer>
+
   <script>
     const posts = [
       {
@@ -59,7 +64,7 @@
       blogHTML += `
         <div class="card blog card-blog">
           <div class="card-container">
-            <h4>${e.title}</h4>
+            <h4><a href="/page/article.html">${e.title}</a></h4>
             <p>${e.content}</p>
           </div>
         </div>

@@ -233,8 +233,20 @@ main aside .social-media li a:hover .fa-facebook {
   max-width: 200px;
 }
 
+.card-blog h4 a {
+  text-decoration: none;
+}
+
 /* Blog */
 .blog {
   flex-direction: column;
   margin: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: black;
+  background-color: white;
 }

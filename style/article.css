@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 100px;
+  border-radius:50%;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: grey;
+  color: white;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+}
+
+aside {
+  flex: 1;
+  
+}
+
+.aside-sticky {
+  position: sticky;
+  top: 0;
+}
+
+#content {
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+
+  transition: 0.3s;
+}
+
+.card {
+  padding: 0px 20px 0px 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+}
